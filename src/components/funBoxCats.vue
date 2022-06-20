@@ -50,7 +50,8 @@
           Чего сидишь? Порадуй котэ,
           <a
             @click="product.inStock = !product.inStock"
-            href="#"
+            href="/"
+            v-on:click.prevent
             class="product__buy-btn"
           >
             купи.</a
