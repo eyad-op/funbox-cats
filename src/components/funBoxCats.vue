@@ -72,56 +72,11 @@
 </template>
 
 <script>
+import { productsData } from "@/assets/data";
 export default {
   data() {
     return {
-      products: [
-        {
-          title: "Сказочное заморское яство",
-          name: "Нямушка",
-          taste: "с фуа-гра",
-          portions: "порций",
-          portionsQuantity: "10",
-          gift: "мышь в подарок",
-          giftQuantity: " ",
-          weight: "0.5",
-          inStock: true,
-          outOfStockText: "Печалька, с фуа-гра закончился.",
-          isHappy: false,
-          isSelected: false,
-          isSelectedText: "Печень утки разварная с артишоками.",
-        },
-        {
-          title: "Сказочное заморское яство",
-          name: "Нямушка",
-          taste: "с рыбой",
-          portions: "порций",
-          portionsQuantity: "40",
-          gift: "мыши в подарок",
-          giftQuantity: "2",
-          weight: "2",
-          inStock: true,
-          outOfStockText: "Печалька, с рыбой закончился.",
-          isHappy: false,
-          isSelected: false,
-          isSelectedText: "Головы щучьи с чесноком да свежайшая сёмгушка.",
-        },
-        {
-          title: "Сказочное заморское яство",
-          name: "Нямушка",
-          taste: "с курой",
-          portions: "порций",
-          portionsQuantity: "100",
-          gift: "мышей в подарок",
-          giftQuantity: "5",
-          weight: "5",
-          inStock: true,
-          outOfStockText: "Печалька, с курой закончился.",
-          isHappy: true,
-          isSelected: false,
-          isSelectedText: "Филе из цыплят с трюфелями в бульоне.",
-        },
-      ],
+      products: productsData,
       selectedStyle: {
         border: "4px solid #D91667",
       },
